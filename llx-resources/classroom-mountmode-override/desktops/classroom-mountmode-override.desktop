@@ -1,0 +1,22 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Classroom Mount Mode Override
+Name[es]=Classroom Mount Mode Override
+Name[qcv]=Classroom Mount Mode Override
+Name[ca_ES@valencia]=Classroom Mount Mode Override
+Name[ca_ES.UTF-8@valencia]=Classroom Mount Mode Override
+TryExec=/usr/bin/classroom-mountmode-override
+Comment=Application that allows to override the mount mode of the classroom established by the server
+Comment[qcv]=Aplicació que permet sobre-escriure l'opció de muntatge de l'aula establit pel servidor
+Comment[ca_ES@valencia]=Aplicació que permet sobre-escriure l'opció de muntatge de l'aula establit pel servidor
+Comment[ca_ES.UTF-8@valencia]=Aplicació que permet sobre-escriure l'opció de muntatge de l'aula establit pel servidor
+Comment[ca_ES]=Aplicació per a configurar l'opció de muntatge lleuger de l'aula
+Comment[es]=Aplicación que permite sobreescribir el modo de montaje del aula establecido por el servidor
+StartupNotify=true
+Exec=pkexec /usr/bin/classroom-mountmode-override
+Icon=classroom-mountmode-override
+Terminal=false
+Type=Application
+X-GNOME-Settings-Panel=classroom-mountmode-override
+X-Unity-Settings-Panel=classroom-mountmode-override
+Categories=PackageManager;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;LliureX-Administration;

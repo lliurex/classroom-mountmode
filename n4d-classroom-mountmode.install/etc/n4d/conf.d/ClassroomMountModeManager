@@ -1,0 +1,9 @@
+[SETUP]
+type=python
+path=ClassroomMountModeManager.py
+class=ClassroomMountModeManager
+[METHODS]
+is_lite_enabled=anonymous
+is_moving_profiles_enabled=anonymous
+set_lite_mode=adm,admins
+set_moving_mode=adm,admins

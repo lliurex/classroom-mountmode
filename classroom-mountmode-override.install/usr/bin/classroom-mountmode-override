@@ -1,0 +1,12 @@
+#! /usr/bin/python3
+import sys
+sys.path.append('/usr/share/classroom-mountmode-override/')
+
+import ClassroomMountModeOverride
+
+if __name__=="__main__":
+	
+	args={}
+	args["gui"]=True
+	ls=ClassroomMountModeOverride.ClassroomMountModeOverride(args)
+	

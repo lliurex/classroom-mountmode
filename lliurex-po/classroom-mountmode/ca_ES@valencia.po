@@ -1,0 +1,115 @@
+# Spanish translations for PACKAGE package
+# Traducciones al español para el paquete PACKAGE.
+# Copyright (C) 2019 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# lliurex <lliurex@gva.es>, 2019.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-02-12 15:28+0100\n"
+"PO-Revision-Date: 2019-02-12 15:31+0100\n"
+"Last-Translator: lliurex <lliurex@gva.es>\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:192
+msgid "Validating user..."
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:211
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:277
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:253
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:474
+msgid "Lite"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:222
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:281
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:459
+msgid "Full"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:247
+msgid "Changes applied successful"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:295
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:302
+msgid "Enabled"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:300
+msgid "Press to disable moving profiles"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:303
+msgid "Disabled"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:308
+msgid "Press to enable moving profiles"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:312
+msgid ""
+"To change the status of moving profiles it is necessary that the established "
+"mode be Lite"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:336
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:352
+msgid "Invalid user"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:371
+msgid "There are pending changes to apply. Do you want to exit or cancel?"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:44
+msgid "User"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:58
+msgid "Password"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:70
+msgid "Server IP    (Default value : server)"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:79
+msgid "Login"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:118
+msgid "Classroom mount mode"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:179
+msgid "Global configuration of classroom mount mode"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:222
+msgid "Established mode: "
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:234
+msgid "Moving Profiles:"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:266
+msgid "Press to select mount mode"
+msgstr ""
+
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:370
+msgid ""
+"When the lite model is set, only the Documents folder will be saved on the "
+"server. To facilitate identification, a link is created on the desktop. You "
+"can also activate or deactivate moving profiles"
+msgstr ""

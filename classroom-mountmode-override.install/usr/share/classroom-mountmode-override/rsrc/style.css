@@ -1,0 +1,217 @@
+/*@define-color arc-blue #5294e2;*/
+
+
+
+/*@define-color arc-blue #3a87e2;*/
+@define-color arc-blue #0062f5;
+@define-color arc-blue-light #4accf5;
+@define-color arc-black #2d323d;
+@define-color arc-red #000000;
+@define-color arc-blue-hover #629de2;
+@define-color arc-blue-active #3aa3e2;
+@define-color default-grey #666666;
+
+
+
+
+
+#DEFAULT-LABEL
+{
+	font: 11pt Quattrocento Sans Bold;
+	color: #666666;
+	
+}
+
+#DEFAULT-LABEL-HELP
+{
+	font: 11pt Quattrocento Sans;
+	color: #888888;
+	
+}
+
+#DEFAULT-LABEL:disabled
+{
+	color: #bbbbbb;
+}
+
+#INFO-LABEL
+{
+	font: 11pt Quattrocento Sans Bold;
+	color: #888888;
+	
+}
+
+#INFO-LABEL:disabled
+{
+	color: #bbbbbb;
+}
+
+
+
+#HEADER-LABEL
+{
+	color: @arc-blue;
+	font: 11pt Quattrocento Sans Bold;
+	font-weight: bold;
+	
+}
+
+#HEADER-SEPARATOR
+{
+	background-color: @arc-blue;
+}
+
+#MSG-LABEL
+{
+	font: 11pt Quattrocento Sans Bold;
+	color:@arc-blue;
+
+}
+
+#WHITE-BACKGROUND
+{
+	background-color: white;
+	
+}
+
+#BORDERLESS-BUTTON
+{
+	border: 0px;
+}
+
+
+#SEPARATOR
+{
+	color: #e3e3e3;
+}
+
+GtkToolbar
+{
+	background-color: white;
+}
+
+
+#MOVING_ENABLED_BUTTON {
+			border-width: 5px;
+			border-radius: 0px;
+			padding: 0px 0px;
+			box-shadow: none;
+			border-color: #3dbb55;
+			
+			color: white;
+			background-image:-gtk-gradient (linear,	left top, left bottom, from (#3dbb55),  to (#3dbb55));
+			text-shadow: none;
+			
+}
+	
+#MOVING_ENABLED_BUTTON:hover {
+		border-color: #77cf88;
+		background-image:-gtk-gradient (linear,	left top, left bottom, from (#77cf88),  to (#77cf88));
+		box-shadow: -0.5px 3px 3px #aaaaaa;
+}
+
+
+#MOVING_DISABLED_BUTTON {
+			border-width: 5px;
+			border-radius: 0px;
+			padding: 0px 0px;
+			box-shadow: none;
+			border-color: #db3237;
+			
+			color: white;
+			background-image:-gtk-gradient (linear,	left top, left bottom, from (#db3237),  to (#db3237));
+			text-shadow: none;
+			
+}
+		
+#MOVING_DISABLED_BUTTON:hover {
+		border-color: #e56f73;
+		background-image:-gtk-gradient (linear,	left top, left bottom, from (#e56f73),  to (#e25a5e));
+		box-shadow: -0.5px 3px 3px #aaaaaa;
+}
+
+#MANAGE_BUTTON {
+			border-width: 5px;
+			border-radius: 0px;
+			padding: 0px 0px;
+			box-shadow: none;
+			border-color: #4784ed;
+			
+			color: white;
+			background-image:-gtk-gradient (linear,	left top, left bottom, from (#4784ed),  to (#4784ed));
+			text-shadow: none;
+			
+	}
+		
+#MANAGE_BUTTON:hover {
+		border-color: #7ea8f2;
+		background-image:-gtk-gradient (linear,	left top, left bottom, from (#7ea8f2),  to (#7ea8f2));
+		box-shadow: -0.5px 3px 3px #aaaaaa;
+	}
+
+#BUTTON_DISABLE{
+		border-width: 5px;
+		border-radius: 0px;
+		padding: 0px 0px;
+		box-shadow: none;
+		border-color:#c6d7f4;
+		color: #c6d7f4;
+		background-image:-gtk-gradient (linear,	left top, left bottom, from (#c6d7f4),  to (#c6d7f4));
+		text-shadow: none;
+
+}	
+
+#BUTTON_LOCK{
+		border-width: 5px;
+		border-radius: 0px;
+		padding: 0px 0px;
+		box-shadow: none;
+		border-color:#8ad699;
+		color: #8ad699;
+		background-image:-gtk-gradient (linear,	left top, left bottom, from (#8ad699),  to (#8ad699));
+		text-shadow: none;
+
+}	
+
+#POPOVER_BUTTON:hover {
+	
+		border-color: #7ea8f2;
+		background-image:-gtk-gradient (linear,	left top, left bottom, from (#7ea8f2),  to (#7ea8f2));
+		box-shadow: -0.5px 3px 3px #aaaaaa;
+		color: white;
+	}	
+
+#CUSTOM-ENTRY
+{
+		color: @default-grey;
+		border: none;
+		/*border-radius: 5px;*/
+		/*background-color: @arc-blue;*/
+		border-bottom: 1px solid #aaaaaa;
+		padding: 4px;
+		/*background: #eeeeee;*/
+		
+		/*border-bottom: 2px solid transparent;*/
+	
+}
+
+#CUSTOM-ENTRY:focus
+{
+		color: @arc-blue;
+		border-bottom: 1px solid @arc-blue-light;
+		/*border-bottom: 2px solid rgba(0,0,0,0);*/
+		/*background-color: transparent;*/
+		
+	
+}
+#CUSTOM-ENTRY:selected
+{
+	color: white;
+}
+
+#CUSTOM-ENTRY:disabled
+{
+	background-color: #bbbbbb;
+	border-bottom: 1px solid transparent;
+	color: #999999;
+}

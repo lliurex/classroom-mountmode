@@ -1,0 +1,22 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Classroom Mount Mode
+Name[es]=Classroom Mount Mode
+Name[qcv]=Classroom Mount Mode
+Name[ca_ES@valencia]=Classroom Mount Mode
+Name[ca_ES.UTF-8@valencia]=Classroom Mount Mode
+TryExec=/usr/bin/classroom-mountmode
+Comment=Application to set up lite classroom mount mode
+Comment[qcv]=Aplicació per a configurar l'opció de muntatge lleuger de l'aula
+Comment[ca_ES@valencia]=Aplicació per a configurar l'opció de muntatge lleuger de l'aula
+Comment[ca_ES.UTF-8@valencia]=Aplicació per a configurar l'opció de muntatge lleuger de l'aula
+Comment[ca_ES]=Aplicació per a configurar l'opció de muntatge lleuger de l'aula
+Comment[es]=Aplicacion para configurar el modo de montaje ligero del aula
+StartupNotify=true
+Exec=/usr/bin/classroom-mountmode
+Icon=classroom-mountmode
+Terminal=false
+Type=Application
+X-GNOME-Settings-Panel=classroom-mountmode
+X-Unity-Settings-Panel=classroom-mountmode
+Categories=PackageManager;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;LliureX-Administration;
