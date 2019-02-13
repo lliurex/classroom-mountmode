@@ -303,7 +303,7 @@ class ClassroomMountModeOverride:
 			self.overrides_mode_btn.set_name("MANAGE_BUTTON")
 			self.overrides_mode_btn.set_sensitive(True)
 
-			if self.overrides_mode_set =="Lite":
+			if self.overrides_mode_set =="True":
 				self.overrides_movingprofiles_btn.set_sensitive(True)
 			else:
 				self.overrides_movingprofiles_btn.set_sensitive(False)
