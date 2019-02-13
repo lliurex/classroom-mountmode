@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 15:28+0100\n"
-"PO-Revision-Date: 2019-02-12 15:33+0100\n"
+"POT-Creation-Date: 2019-02-13 08:46+0100\n"
+"PO-Revision-Date: 2019-02-13 08:48+0100\n"
 "Last-Translator: lliurex <lliurex@gva.es>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:176
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:232
@@ -55,8 +56,8 @@ msgstr ""
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:272
 msgid ""
-"To change the status of moving profiles it is necessary that the established "
-"mode be Lite"
+"To change the status of moving profiles it is \n"
+" necessary that the established mode be Lite"
 msgstr ""
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:285

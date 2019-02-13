@@ -269,7 +269,7 @@ class ClassroomMountModeOverride:
 
 			else:
 				self.overrides_movingprofiles_btn.set_name("BUTTON_LOCK")
-				self.overrides_movingprofiles_btn.set_tooltip_text(_("To change the status of moving profiles it is necessary that the established mode be Lite"))			
+				self.overrides_movingprofiles_btn.set_tooltip_text(_("To change the status of moving profiles it is \n necessary that the established mode be Lite"))			
 		else:
 			self.overrides_movingprofiles_btn.set_name("BUTTON_DISABLE")		
 
