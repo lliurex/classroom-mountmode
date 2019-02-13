@@ -136,7 +136,7 @@ class OverridesModeManager:
 		self.dprint("Overrides save info: ")
 		self.dprint("-Overrides server config: "+str(info[0]))
 		if info[1]=="True":
-			overides_mount_mode="Lite"
+			overrides_mount_mode="Lite"
 		else:
 			overrides_mount_mode="Full"	
 		self.dprint("-Overrides mount mode: "+overrides_mount_mode)
