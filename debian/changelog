@@ -1,3 +1,9 @@
+classroom-mountmode (0.2) bionic; urgency=medium
+
+  * Fixed bug in classroom-mountmode-override
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 13 Feb 2019 12:19:09 +0100
+
 classroom-mountmode (0.1) bionic; urgency=medium
 
   * Initial release.
