@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 15:28+0100\n"
+"POT-Creation-Date: 2019-02-13 08:46+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,13 +24,13 @@ msgstr ""
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:211
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:277
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:253
-#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:474
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:476
 msgid "Lite"
 msgstr ""
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:222
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:281
-#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:459
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:461
 msgid "Full"
 msgstr ""
 
@@ -57,8 +57,8 @@ msgstr ""
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:312
 msgid ""
-"To change the status of moving profiles it is necessary that the established "
-"mode be Lite"
+"To change the status of moving profiles it is \n"
+" necessary that the established mode be Lite"
 msgstr ""
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:336

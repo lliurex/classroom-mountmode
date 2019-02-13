@@ -309,7 +309,7 @@ class ClassroomMountMode:
 
 		if not self.litemode_state:
 			self.movingprofiles_btn.set_name("BUTTON_LOCK")
-			self.movingprofiles_btn.set_tooltip_text(_("To change the status of moving profiles it is necessary that the established mode be Lite"))			
+			self.movingprofiles_btn.set_tooltip_text(_("To change the status of moving profiles it is \n necessary that the established mode be Lite"))			
 
 	#def movingprofiles_manage_state		
 

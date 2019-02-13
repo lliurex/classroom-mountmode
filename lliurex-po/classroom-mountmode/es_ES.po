@@ -6,10 +6,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-12 15:28+0100\n"
-"PO-Revision-Date: 2019-02-12 15:30+0100\n"
+"POT-Creation-Date: 2019-02-13 08:46+0100\n"
+"PO-Revision-Date: 2019-02-13 08:47+0100\n"
 "Last-Translator: lliurex <lliurex@gva.es>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:192
 msgid "Validating user..."
@@ -25,13 +26,13 @@ msgstr ""
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:211
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:277
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:253
-#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:474
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:476
 msgid "Lite"
 msgstr ""
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:222
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:281
-#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:459
+#: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:461
 msgid "Full"
 msgstr ""
 
@@ -58,8 +59,8 @@ msgstr ""
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:312
 msgid ""
-"To change the status of moving profiles it is necessary that the established "
-"mode be Lite"
+"To change the status of moving profiles it is \n"
+" necessary that the established mode be Lite"
 msgstr ""
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:336
