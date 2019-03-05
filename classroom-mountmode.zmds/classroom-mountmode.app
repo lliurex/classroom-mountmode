@@ -8,7 +8,7 @@ Comment[es]=Configura el modo de montaje ligero en el aula
 Comment[ca_ES@valencia]=Configura l'opció de muntatge lleuger en l'aula
 Comment[ca_ES.UTF-8@valencia]=Configura l'opció de muntatge lleuger en l'aula
 Icon=classroom-mountmode
-Groups=admins;adm;
+Groups=admins;sudo
 Category=Configuration
 ScriptPath=classroom-mountmode.zmd
 
