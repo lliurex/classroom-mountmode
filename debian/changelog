@@ -1,3 +1,9 @@
+classroom-mountmode (0.5) bionic; urgency=medium
+
+  * Fixed login function
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 15 Mar 2019 12:09:49 +0100
+
 classroom-mountmode (0.4) bionic; urgency=medium
 
   * Changed adm group by sudo
