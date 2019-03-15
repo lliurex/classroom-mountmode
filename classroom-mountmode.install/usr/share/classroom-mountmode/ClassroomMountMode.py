@@ -187,7 +187,8 @@ class ClassroomMountMode:
 
 		if server!="":
 			self.n4d_man.set_server(server)
-		
+		else:
+			self.n4d_man.set_server('server')
 		
 		self.login_msg_label.set_text(_("Validating user..."))
 		
