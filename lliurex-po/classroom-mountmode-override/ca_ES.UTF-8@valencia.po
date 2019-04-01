@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-13 08:46+0100\n"
-"PO-Revision-Date: 2019-04-01 12:09+0200\n"
+"PO-Revision-Date: 2019-04-01 12:43+0200\n"
 "Last-Translator: lliurex <lliurex@gva.es>\n"
 "Language-Team: Spanish\n"
 "Language: ca_ES\n"
@@ -38,13 +38,13 @@ msgstr "Complet "
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:121
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:272
 msgid "Enabled"
-msgstr "Habilitat  "
+msgstr "Habilitats "
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:213
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:255
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:256
 msgid "Disabled"
-msgstr "Inhabilitat "
+msgstr "Inhabilitats"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:264
 msgid "Press to disable moving profiles"
@@ -99,7 +99,7 @@ msgstr "S'estan movent els perfils: "
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:134
 msgid "Classroom mount mode override"
-msgstr "Sobreescriptura del mode de muntatge de Classroom"
+msgstr "Sobreescriptura del mode de muntatge de l'aula"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:236
 msgid "Press to select mount mode"

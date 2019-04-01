@@ -363,7 +363,7 @@ class ClassroomMountModeOverride:
 				pending_changes+=1
 
 		if pending_changes>0:
-			dialog = Gtk.MessageDialog(None,0,Gtk.MessageType.WARNING, (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE,Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL),"Classroom Mount Mode")
+			dialog = Gtk.MessageDialog(None,0,Gtk.MessageType.WARNING, (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE,Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL),"Classroom Mount Mode Override")
 			dialog.format_secondary_text(_("There are pending changes to apply. Do you want to exit or cancel?"))
 			response=dialog.run()
 			dialog.destroy()
