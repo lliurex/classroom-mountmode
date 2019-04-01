@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-13 08:46+0100\n"
-"PO-Revision-Date: 2019-02-13 08:48+0100\n"
+"PO-Revision-Date: 2019-04-01 12:08+0200\n"
 "Last-Translator: lliurex <lliurex@gva.es>\n"
 "Language-Team: Spanish\n"
 "Language: es\n"
@@ -25,74 +25,76 @@ msgstr ""
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:223
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:452
 msgid "Lite"
-msgstr ""
+msgstr "Lite"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:187
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:228
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:437
 msgid "Full"
-msgstr ""
+msgstr "Completo"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:211
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:250
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:121
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:272
 msgid "Enabled"
-msgstr ""
+msgstr "Activado"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:213
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:255
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:256
 msgid "Disabled"
-msgstr ""
+msgstr "Desactivado"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:264
 msgid "Press to disable moving profiles"
-msgstr ""
+msgstr "Haga clic para deshabilitar los perfiles móviles"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:267
 msgid "Press to enable moving profiles"
-msgstr ""
+msgstr "Haga clic para habilitar los perfiles móviles"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:272
 msgid ""
 "To change the status of moving profiles it is \n"
 " necessary that the established mode be Lite"
 msgstr ""
+"Para cambiar el estado de los perfiles móviles es \n"
+"necesario que el modo establecido sea Lite"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:285
 msgid "Changes applied successful"
-msgstr ""
+msgstr "Cambios aplicados correctamente"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:292
 msgid "Deactivate to apply server configuration"
-msgstr ""
+msgstr "Desactivar para aplicar la configuración del servidor"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:294
 msgid "Activate to override server configuration"
-msgstr ""
+msgstr "Activar para sobreescribir la configuración del servidor"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/ClassroomMountModeOverride.py:367
 msgid "There are pending changes to apply. Do you want to exit or cancel?"
-msgstr ""
+msgstr "Hay cambios pendientes de aplicar. ¿Desea salir o cancelar?"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/OverridesModeManager.py:55
 msgid "You need administration privileges to run this application."
-msgstr ""
+msgstr "Necesita permisos de administrador para ejecutar esta aplicación."
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:38
 msgid "Classroom mount mode established by server"
-msgstr ""
+msgstr "Modo de montaje del aula establecido por el servidor"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:82
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:190
 msgid "Established mode: "
-msgstr ""
+msgstr "Modo establecido: "
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:95
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:203
 msgid "Moving Profiles:"
-msgstr ""
+msgstr "Perfiles móviles:"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:134
 msgid "Classroom mount mode override"
@@ -100,7 +102,7 @@ msgstr ""
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:236
 msgid "Press to select mount mode"
-msgstr ""
+msgstr "Haga clic para seleccionar el modo de montaje"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:346
 msgid ""
@@ -108,6 +110,9 @@ msgid ""
 "server on this computer. If lite mode is enabled, you can enable or disable "
 "moving profiles"
 msgstr ""
+"Permite sobreescribir el modo de montaje establecido por el servidor en "
+"este equipo. Si el modo Lite es activado puede habilitar o deshabilitar los "
+"perfiles móviles"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:471
 msgid "Classroom Mount Mode Override"
