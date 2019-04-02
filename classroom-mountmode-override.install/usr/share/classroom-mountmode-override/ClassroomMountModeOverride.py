@@ -51,7 +51,7 @@ class ClassroomMountModeOverride:
 		builder.add_from_file(UI_FILE)
 			
 		self.main_window=builder.get_object("main_window")
-		
+		self.main_window.resize(705,654)
 		self.main_box=builder.get_object("main_box")
 		self.info_box=builder.get_object("info_box")
 
@@ -98,12 +98,13 @@ class ClassroomMountModeOverride:
 		
 		self.set_css_info()
 		self.init_threads()
+		self.orig_values=[]
 		self.load_mount_mode()
 		self.apply=False
 		self.connect_signals()
 		self.main_window.show()
 		self.help_btn.hide()
-
+		
 		
 	#def start_gui
 
@@ -351,26 +352,28 @@ class ClassroomMountModeOverride:
 	def check_changes(self,widget,event=None):
 
 		pending_changes=0
-		
-		if self.orig_values[0]!=self.overrides_server_config:
-			pending_changes+=1
 
-		if self.overrides_server_config:
-			if self.orig_values[1]!=self.overrides_mode_set:
+		if len(self.orig_values)>0:
+			
+			if self.orig_values[0]!=self.overrides_server_config:
 				pending_changes+=1
 
-			if self.orig_values[2]!=self.overrides_movingprofiles_set:
-				pending_changes+=1
+			if self.overrides_server_config:
+				if self.orig_values[1]!=self.overrides_mode_set:
+					pending_changes+=1
 
-		if pending_changes>0:
-			dialog = Gtk.MessageDialog(None,0,Gtk.MessageType.WARNING, (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE,Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL),"Classroom Mount Mode Override")
-			dialog.format_secondary_text(_("There are pending changes to apply. Do you want to exit or cancel?"))
-			response=dialog.run()
-			dialog.destroy()
-			if response==Gtk.ResponseType.CLOSE:
-				return False
-			else:
-				return True
+				if self.orig_values[2]!=self.overrides_movingprofiles_set:
+					pending_changes+=1
+
+			if pending_changes>0:
+				dialog = Gtk.MessageDialog(None,0,Gtk.MessageType.WARNING, (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE,Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL),"Classroom Mount Mode Override")
+				dialog.format_secondary_text(_("There are pending changes to apply. Do you want to exit or cancel?"))
+				response=dialog.run()
+				dialog.destroy()
+				if response==Gtk.ResponseType.CLOSE:
+					return False
+				else:
+					return True
 
 		sys.exit(0)
 

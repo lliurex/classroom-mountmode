@@ -70,7 +70,6 @@
             <property name="margin_top">15</property>
             <property name="margin_bottom">10</property>
             <property name="row_spacing">15</property>
-            <property name="column_spacing">50</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
@@ -178,7 +177,6 @@
             <property name="margin_top">15</property>
             <property name="margin_bottom">10</property>
             <property name="row_spacing">15</property>
-            <property name="column_spacing">50</property>
             <property name="row_homogeneous">True</property>
             <property name="column_homogeneous">True</property>
             <child>
@@ -465,7 +463,7 @@
     </child>
   </object>
   <object class="GtkWindow" id="main_window">
-    <property name="width_request">600</property>
+    <property name="width_request">705</property>
     <property name="height_request">150</property>
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">Classroom Mount Mode Override</property>
