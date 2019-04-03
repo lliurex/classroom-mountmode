@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-13 08:46+0100\n"
-"PO-Revision-Date: 2019-04-01 12:43+0200\n"
+"PO-Revision-Date: 2019-04-02 09:07+0200\n"
 "Last-Translator: lliurex <lliurex@gva.es>\n"
 "Language-Team: Spanish\n"
 "Language: ca_ES\n"
@@ -85,7 +85,7 @@ msgstr ""
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:38
 msgid "Classroom mount mode established by server"
-msgstr "El servidor ha establit em mode de muntatge de Classroom"
+msgstr "El servidor ha establit em mode de muntatge de l'aula"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:82
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:190
@@ -95,7 +95,7 @@ msgstr "S'ha establit el mode: "
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:95
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:203
 msgid "Moving Profiles:"
-msgstr "S'estan movent els perfils: "
+msgstr "Perfils mòbils:"
 
 #: ../classroom-mountmode-override.install/usr/share/classroom-mountmode-override/rsrc/classroom-mountmode-override.ui:134
 msgid "Classroom mount mode override"

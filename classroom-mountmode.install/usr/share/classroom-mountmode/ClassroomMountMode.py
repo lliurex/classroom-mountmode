@@ -100,6 +100,7 @@ class ClassroomMountMode:
 		self.set_css_info()
 		self.main_window.show()
 		self.help_btn.hide()
+		self.orig_values=[]
 		
 	#def start_gui
 	
@@ -359,23 +360,25 @@ class ClassroomMountMode:
 	def check_changes(self,widget,event=None):
 
 		pending_changes=0
+
+		if len(self.orig_values)>0:
 		
-		if self.orig_values[0]!=self.litemode_state:
-			pending_changes+=1
+			if self.orig_values[0]!=self.litemode_state:
+				pending_changes+=1
 
-		if self.orig_values[1]!=self.movingprofiles_state:
-			pending_changes+1
+			if self.orig_values[1]!=self.movingprofiles_state:
+				pending_changes+=1
 
-		if pending_changes>0:
-			dialog = Gtk.MessageDialog(None,0,Gtk.MessageType.WARNING, (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE,
-             Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL),"Classroom Mount Mode")
-			dialog.format_secondary_text(_("There are pending changes to apply. Do you want to exit or cancel?"))
-			response=dialog.run()
-			dialog.destroy()
-			if response==Gtk.ResponseType.CLOSE:
-				return False
-			else:
-				return True
+			if pending_changes>0:
+				dialog = Gtk.MessageDialog(None,0,Gtk.MessageType.WARNING, (Gtk.STOCK_CLOSE, Gtk.ResponseType.CLOSE,
+	             Gtk.STOCK_CANCEL, Gtk.ResponseType.CANCEL),"Classroom Mount Mode")
+				dialog.format_secondary_text(_("There are pending changes to apply. Do you want to exit or cancel?"))
+				response=dialog.run()
+				dialog.destroy()
+				if response==Gtk.ResponseType.CLOSE:
+					return False
+				else:
+					return True
 
 		sys.exit(0)
 

@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-13 08:46+0100\n"
-"PO-Revision-Date: 2019-04-01 11:58+0200\n"
+"PO-Revision-Date: 2019-04-02 09:03+0200\n"
 "Last-Translator: lliurex <lliurex@gva.es>\n"
 "Language-Team: Spanish\n"
 "Language: ca_ES\n"
@@ -43,7 +43,7 @@ msgstr "S'han aplicat els canvis correctament "
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:295
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/rsrc/classroom-mountmode.ui:302
 msgid "Enabled"
-msgstr "Habilitat  "
+msgstr "Habilitats  "
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:300
 msgid "Press to disable moving profiles"
@@ -51,7 +51,7 @@ msgstr "Premeu per a inhabilitar els perfils mòbils "
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:303
 msgid "Disabled"
-msgstr "Inhabilitat "
+msgstr "Inhabilitats"
 
 #: ../classroom-mountmode.install/usr/share/classroom-mountmode/ClassroomMountMode.py:308
 msgid "Press to enable moving profiles"
