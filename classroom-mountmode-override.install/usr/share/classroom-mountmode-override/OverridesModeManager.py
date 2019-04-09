@@ -72,7 +72,7 @@ class OverridesModeManager:
 	def get_overrides_info(self):
 		
 		server_config=self.get_server_config()
-		if server_config["SRV_LITE_MODE"]:
+		if server_config["SRV_LITE_MODE"]=="True":
 			self.server_mount_mode="Lite"
 		else:
 			self.server_mount_mode="Full"
