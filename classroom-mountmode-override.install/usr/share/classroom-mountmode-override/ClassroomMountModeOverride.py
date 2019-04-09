@@ -104,8 +104,7 @@ class ClassroomMountModeOverride:
 		self.connect_signals()
 		self.main_window.show()
 		self.help_btn.hide()
-		
-		
+				
 	#def start_gui
 
 
@@ -208,7 +207,7 @@ class ClassroomMountModeOverride:
 	def load_mount_mode(self):
 
 		self.server_mode_entry_label.set_text(_(self.overrides_man.server_mount_mode))
-		if self.overrides_man.server_moving_profiles_enabled:
+		if self.overrides_man.server_moving_profiles_enabled=="True":
 			self.server_movingprofiles_entry_label.set_text(_("Enabled"))
 		else:
 			self.server_movingprofiles_entry_label.set_text(_("Disabled"))
@@ -254,7 +253,7 @@ class ClassroomMountModeOverride:
 		
 		else:
 			self.overrides_movingprofiles_entry_status.set_text(_("Disabled"))
-			self.server_movingprofiles_entry_label.set_text(_("Disabled"))
+			#self.server_movingprofiles_entry_label.set_text(_("Disabled"))
 			img=Gtk.Image.new_from_file(DISABLED_IMG)
 			self.overrides_movingprofiles_btn.set_image(img)
 		
@@ -352,9 +351,7 @@ class ClassroomMountModeOverride:
 	def check_changes(self,widget,event=None):
 
 		pending_changes=0
-
 		if len(self.orig_values)>0:
-			
 			if self.orig_values[0]!=self.overrides_server_config:
 				pending_changes+=1
 
