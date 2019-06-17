@@ -23,17 +23,17 @@
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <sodipodi:namedview
-     inkscape:window-y="0"
+     inkscape:window-y="30"
      inkscape:window-x="0"
-     inkscape:window-height="917"
+     inkscape:window-height="837"
      inkscape:window-width="1920"
      inkscape:document-units="px"
      inkscape:grid-bbox="true"
      showgrid="false"
-     inkscape:current-layer="g5558"
-     inkscape:cy="51.340395"
-     inkscape:cx="132.63901"
-     inkscape:zoom="0.99999996"
+     inkscape:current-layer="text2520-9-2"
+     inkscape:cy="44.309809"
+     inkscape:cx="25.944178"
+     inkscape:zoom="1.9999999"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="0.17254902"
@@ -6963,7 +6963,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:creator>
           <cc:Agent>
             <dc:title>Jakub Steiner</dc:title>
@@ -8339,18 +8339,44 @@
                    x="-60.947701"
                    y="-2.8761282"
                    style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#000000;stroke-width:0.23458111">OVERRIDE</tspan></text>
-              <text
-                 xml:space="preserve"
+              <g
+                 aria-label="OVERRIDE"
+                 transform="rotate(-29.720245)"
                  style="font-style:normal;font-weight:normal;font-size:9.38324451px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.23458111"
-                 x="-61.400669"
-                 y="-2.9437127"
-                 id="text2520-9-2"
-                 transform="rotate(-29.720245)"><tspan
-                   sodipodi:role="line"
-                   id="tspan2518-7-4"
-                   x="-61.400669"
-                   y="-2.9437127"
-                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111">OVERRIDE</tspan></text>
+                 id="text2520-9-2">
+                <path
+                   d="m -54.644733,-6.3029142 q 0,1.0415401 -0.356563,1.8203494 -0.34718,0.769426 -1.04154,1.2010553 -0.684977,0.4316292 -1.688984,0.4316292 -1.041541,0 -1.735901,-0.4316292 -0.684977,-0.4316293 -1.022773,-1.2104386 -0.337797,-0.7788093 -0.337797,-1.8203494 0,-1.0227736 0.337797,-1.7921997 0.337796,-0.7788093 1.022773,-1.2104385 0.69436,-0.4316293 1.745284,-0.4316293 1.004007,0 1.688984,0.4316293 0.684977,0.422246 1.032157,1.2010553 0.356563,0.769426 0.356563,1.8109662 z m -5.29215,0 q 0,1.266738 0.534845,1.998631 0.534845,0.7225099 1.670218,0.7225099 1.135372,0 1.660834,-0.7225099 0.534845,-0.731893 0.534845,-1.998631 0,-1.2667381 -0.525462,-1.9798646 -0.525462,-0.7225099 -1.660834,-0.7225099 -1.144756,0 -1.679601,0.7225099 -0.534845,0.7131265 -0.534845,1.9798646 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2543" />
+                <path
+                   d="m -48.531696,-9.6433493 -2.392727,6.6996366 h -0.844492 l -2.392728,-6.6996366 h 0.882025 l 1.510703,4.297526 q 0.150132,0.4128628 0.243964,0.7788093 0.103216,0.3565633 0.178282,0.6849768 0.06568,-0.3284135 0.168898,-0.6943601 0.103216,-0.3659465 0.253348,-0.7881925 l 1.501319,-4.2787595 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2545" />
+                <path
+                   d="m -43.881272,-2.9437127 h -3.743915 v -6.6996366 h 3.743915 v 0.7412763 h -2.899423 v 2.0924635 h 2.730525 v 0.7318931 h -2.730525 v 2.3927274 h 2.899423 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2547" />
+                <path
+                   d="m -40.553593,-9.6433493 q 1.247971,0 1.839116,0.4785455 0.600527,0.4691622 0.600527,1.4262531 0,0.534845 -0.197048,0.8914083 -0.197048,0.3565633 -0.506695,0.5723779 -0.300264,0.2158146 -0.638061,0.3284135 l 1.839116,3.0026383 h -0.985241 l -1.623301,-2.7680571 h -1.332421 v 2.7680571 h -0.844492 v -6.6996366 z m -0.04692,0.7318931 h -0.957091 v 2.4865598 h 1.004008 q 0.816342,0 1.191672,-0.3190303 0.375329,-0.3284136 0.375329,-0.957091 0,-0.6568271 -0.394096,-0.9289412 -0.394096,-0.2814973 -1.219822,-0.2814973 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2549" />
+                <path
+                   d="m -34.725718,-9.6433493 q 1.247971,0 1.839116,0.4785455 0.600527,0.4691622 0.600527,1.4262531 0,0.534845 -0.197048,0.8914083 -0.197048,0.3565633 -0.506695,0.5723779 -0.300264,0.2158146 -0.638061,0.3284135 l 1.839116,3.0026383 h -0.98524 l -1.623302,-2.7680571 h -1.33242 v 2.7680571 h -0.844492 v -6.6996366 z m -0.04692,0.7318931 h -0.95709 v 2.4865598 h 1.004007 q 0.816342,0 1.191672,-0.3190303 0.37533,-0.3284136 0.37533,-0.957091 0,-0.6568271 -0.394097,-0.9289412 -0.394096,-0.2814973 -1.219822,-0.2814973 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2551" />
+                <path
+                   d="m -28.86031,-2.9437127 h -2.420877 v -0.4879287 l 0.788192,-0.1782817 v -5.3578326 l -0.788192,-0.1876649 v -0.4879287 h 2.420877 v 0.4879287 l -0.788193,0.1876649 v 5.3578326 l 0.788193,0.1782817 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2553" />
+                <path
+                   d="m -22.190287,-6.3592137 q 0,1.6983672 -0.928942,2.5616257 -0.919558,0.8538753 -2.571009,0.8538753 h -1.867265 v -6.6996366 h 2.064313 q 1.004008,0 1.745284,0.3753298 0.750659,0.3753298 1.154139,1.1072228 0.40348,0.7318931 0.40348,1.801583 z m -0.891409,0.02815 q 0,-1.3418039 -0.66621,-1.9610981 -0.656827,-0.6286774 -1.867266,-0.6286774 h -1.097839 v 5.254617 h 0.910174 q 2.721141,0 2.721141,-2.6648415 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2555" />
+                <path
+                   d="m -16.959425,-2.9437127 h -3.743914 v -6.6996366 h 3.743914 v 0.7412763 h -2.899422 v 2.0924635 h 2.730524 v 0.7318931 h -2.730524 v 2.3927274 h 2.899422 z"
+                   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'[TOP_SECRET]';-inkscape-font-specification:'[TOP_SECRET]';fill:#ff0000;stroke-width:0.23458111"
+                   id="path2557" />
+              </g>
             </g>
           </g>
         </g>
