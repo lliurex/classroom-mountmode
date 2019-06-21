@@ -34,10 +34,10 @@ class ClassroomMountModeManager:
 
 		if self.moving_status==None:
 			try:
-				self.n4d_vars.add_variable("SRV_MOVING_MODE",False,"","Classroom Moving configuration for lite mode","classroom-mount-mode")
+				self.n4d_vars.add_variable("SRV_MOVING_MODE",True,"","Classroom Moving configuration for lite mode","classroom-mount-mode")
 			except Exception as e:
 				pass
-			self.moving_status=False
+			self.moving_status=True
 		
 	#def init_variable
 	
