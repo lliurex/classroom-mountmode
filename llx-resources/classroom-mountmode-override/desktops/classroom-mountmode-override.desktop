@@ -18,6 +18,7 @@ StartupNotify=true
 Exec=pkexec /usr/bin/classroom-mountmode-override
 Icon=classroom-mountmode-override
 Terminal=false
+NoDisplay=true
 Type=Application
 X-GNOME-Settings-Panel=classroom-mountmode-override
 X-Unity-Settings-Panel=classroom-mountmode-override

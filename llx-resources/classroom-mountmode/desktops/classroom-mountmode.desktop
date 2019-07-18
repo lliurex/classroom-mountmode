@@ -18,6 +18,7 @@ Exec=/usr/bin/classroom-mountmode
 Icon=classroom-mountmode
 Terminal=false
 Type=Application
+NoDisplay=true
 X-GNOME-Settings-Panel=classroom-mountmode
 X-Unity-Settings-Panel=classroom-mountmode
 Categories=PackageManager;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-Unity-Settings-Panel;LliureX-Administration;
