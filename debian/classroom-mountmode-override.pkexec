@@ -1,0 +1,25 @@
+[
+    {
+        "prefix": "net.lliurex.classroom-mountmode-override",
+        "cmd": "/usr/bin/classroom-mountmode-override",
+        "nameaction": "gui",
+        "icon": "classroom-mountmode-override",
+        "default_auth": {
+            "any": "no",
+            "inactive": "no",
+            "active": "no"
+        },
+        "auths": [
+            {
+                "type": "group",
+                "members": [
+                    "sudo",
+                    "admins"
+                ],
+                "any": "yes",
+                "inactive": "yes",
+                "active": "yes"
+            }
+        ]
+    }
+]
