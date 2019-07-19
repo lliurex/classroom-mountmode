@@ -1,3 +1,9 @@
+classroom-mountmode (0.13) bionic; urgency=medium
+
+  * Fixed classroom-mountmode-override polkit files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 19 Jul 2019 11:19:08 +0200
+
 classroom-mountmode (0.12) bionic; urgency=medium
 
   * Hide desktops from menu
