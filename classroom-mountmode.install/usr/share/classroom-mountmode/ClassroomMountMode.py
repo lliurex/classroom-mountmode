@@ -99,7 +99,6 @@ class ClassroomMountMode:
 		self.connect_signals()
 		self.set_css_info()
 		self.main_window.show()
-		self.help_btn.hide()
 		self.orig_values=[]
 		
 	#def start_gui
@@ -255,9 +254,9 @@ class ClassroomMountMode:
 		lang=os.environ["LANG"]
 
 		if 'ca_ES' in lang:
-			self.help_cmd='xdg-open http://wiki.lliurex.net/tiki-index.php?page='
+			self.help_cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode_va'
 		else:
-			self.help_cmd='xdg-open http://wiki.lliurex.net/tiki-index.php?page='
+			self.help_cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode'
 
 		self.init_threads()
 		self.open_help_t.start()
