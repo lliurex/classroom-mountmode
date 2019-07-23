@@ -1,3 +1,9 @@
+classroom-mountmode (0.14) bionic; urgency=medium
+
+  * Added link to help
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Tue, 23 Jul 2019 07:59:09 +0200
+
 classroom-mountmode (0.13) bionic; urgency=medium
 
   * Fixed classroom-mountmode-override polkit files
