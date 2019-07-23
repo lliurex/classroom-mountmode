@@ -103,7 +103,7 @@ class ClassroomMountModeOverride:
 		self.apply=False
 		self.connect_signals()
 		self.main_window.show()
-		self.help_btn.hide()
+		
 				
 	#def start_gui
 
@@ -327,9 +327,9 @@ class ClassroomMountModeOverride:
 			run_pkexec=True
 		
 		if 'ca_ES' in lang:
-			cmd='xdg-open http://wiki.lliurex.net/tiki-index.php?page='
+			cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode-Override_va'
 		else:
-			cmd='xdg-open http://wiki.lliurex.net/tiki-index.php?page='
+			cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode-Override'
 
 		if not run_pkexec:
 			self.fcmd="su -c '%s' $USER "%cmd
