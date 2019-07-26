@@ -1,3 +1,9 @@
+classroom-mountmode (0.15) bionic; urgency=medium
+
+  * Added ca@valencia po files
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Fri, 26 Jul 2019 11:16:22 +0200
+
 classroom-mountmode (0.14) bionic; urgency=medium
 
   * Added link to help
