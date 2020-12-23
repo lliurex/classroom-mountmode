@@ -254,7 +254,7 @@ class ClassroomMountMode:
 		lang=os.environ["LANG"]
 
 		if 'ca_ES' in lang:
-			self.help_cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode_va'
+			self.help_cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom+Mount+Mode.'
 		else:
 			self.help_cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode'
 
