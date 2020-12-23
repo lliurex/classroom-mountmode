@@ -1,3 +1,9 @@
+classroom-mountmode (0.17) bionic; urgency=medium
+
+  * Updated link to the wiki
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 23 Dec 2020 15:40:47 +0100
+
 classroom-mountmode (0.16) bionic; urgency=medium
 
   * Fixed po files
