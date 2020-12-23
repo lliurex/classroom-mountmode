@@ -321,15 +321,28 @@ class ClassroomMountModeOverride:
 	def show_help(self,widget):
 
 		lang=os.environ["LANG"]
+		language=os.environ["LANGUAGE"]
 		run_pkexec=False
 		
 		if "PKEXEC_UID" in os.environ:
 			run_pkexec=True
-		
-		if 'ca_ES' in lang:
-			cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode-Override_va'
+
+		exec_lang=""
+		app_lang=""
+
+		if language=="":
+			app_lang=lang
 		else:
-			cmd='xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode-Override'
+			language=language.split(":")[0]
+			app_lang=language
+	
+		
+		if 'valencia' in app_lang:
+			exec_lang="LANG=ca_ES.UTF-8@valencia"
+			cmd=exec_lang+' xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode-Override.'
+		else:
+			exec_lang="LANG=es_ES.UTF-8"
+			cmd=exec_lang+' xdg-open https://wiki.edu.gva.es/lliurex/tiki-index.php?page=Classroom-Mount-Mode-Override'
 
 		if not run_pkexec:
 			self.fcmd="su -c '%s' $USER "%cmd
