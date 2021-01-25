@@ -1,0 +1,31 @@
+{
+    "SETUP": {
+        "type": "python",
+        "path": "ClassroomMountModeManager.py",
+        "class": "ClassroomMountModeManager"
+    },
+    "METHODS": {
+        "is_lite_enabled": {
+            "allowed_groups": [
+                "anonymous"
+            ]
+        },
+        "is_moving_profiles_enabled": {
+            "allowed_groups": [
+                "anonymous"
+            ]
+        },
+        "set_lite_mode": {
+            "allowed_groups": [
+                "sudo",
+                "admins"
+            ]
+        },
+        "set_moving_mode": {
+            "allowed_groups": [
+                "sudo",
+                "admins"
+            ]
+        }
+    }
+}
