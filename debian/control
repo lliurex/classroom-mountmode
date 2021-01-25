@@ -1,0 +1,25 @@
+Source: classroom-mountmode
+Section: admin
+Priority: extra
+Maintainer: LliureX Team <lliurex@gva.es>
+Build-Depends: debhelper (>= 10), llxsrchelper,zero-dev,python3-poinstaller
+Standards-Version: 4.1.2
+Homepage: http://lliurex.net
+
+Package: classroom-mountmode
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, n4d
+Description: Allows to set lite mode classroom
+ Allows to set lite mode classroom
+ 
+Package: classroom-mountmode-override
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, n4d
+Description: Allows to overrides classroom mount mode
+ Allows to overrides classroom mount mode established by server
+
+Package: n4d-classroom-mountmode
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, n4d
+Description: Classroom MountMode plugin
+ Plugins supporting Classroom MountMode funcionality
