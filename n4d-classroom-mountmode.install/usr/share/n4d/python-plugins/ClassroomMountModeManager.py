@@ -80,12 +80,12 @@ class ClassroomMountModeManager:
 				return ret
 			except Exception as e:
 				#Old n4d: return {"status":False, "msg":str(e)}
-				return n4d.responses.build_failed_call_response(str(e))
+				return n4d.responses.build_failed_call_response('',str(e))
 				
 				
 		else:
 			#Old n4d: return {"status":False, "msg":"Value is not boolean"}
-			return responses.build_failed_call_response("Value is not boolean")
+			return responses.build_failed_call_response('',"Value is not boolean")
 
 	
 	#def set_lite_mode
@@ -102,12 +102,12 @@ class ClassroomMountModeManager:
 				return ret
 			except Exception as e:
 				#Old n4d:return {"status":False, "msg":str(e)}
-				return responses.build_failed_call_response(str(e))
+				return responses.build_failed_call_response('',str(e))
 				
 				
 		else:
 			#Old n4d: return {"status":False, "msg":"Value is not boolean"}
-			return responses.build_failed_call_response("Value is not boolean")
+			return responses.build_failed_call_response('',"Value is not boolean")
 			
 	#def set_lite_mode
 	
