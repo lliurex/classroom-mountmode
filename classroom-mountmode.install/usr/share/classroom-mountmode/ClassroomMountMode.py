@@ -30,7 +30,7 @@ class ClassroomMountMode:
 	def __init__(self,args_dic):
 		
 		self.n4d_man=N4dManager.N4dManager()
-		self.n4d_man.set_server(args_dic["server"])
+		#self.n4d_man.set_server(args_dic["server"])
 
 		#self.n4d_man.set_server(args_dic["172.20.9.246"])
 		
@@ -185,15 +185,13 @@ class ClassroomMountMode:
 		server="172.20.9.246"
 		'''
 
-		if server!="":
-			self.n4d_man.set_server(server)
-		else:
-			self.n4d_man.set_server('server')
+		if server=="":
+			server='server'
 		
 		self.login_msg_label.set_text(_("Validating user..."))
 		
 		self.login_button.set_sensitive(False)
-		self.validate_user(user,password)
+		self.validate_user(server,user,password)
 		
 		
 	#def login_clicked
@@ -316,10 +314,10 @@ class ClassroomMountMode:
 
 	# ##################### ##########################################
 	
-	def validate_user(self,user,password):
+	def validate_user(self,server,user,password):
 		
 		
-		t=threading.Thread(target=self.n4d_man.validate_user,args=(user,password,))
+		t=threading.Thread(target=self.n4d_man.validate_user,args=(server,user,password,))
 		t.daemon=True
 		t.start()
 		GLib.timeout_add(500,self.validate_user_listener,t)

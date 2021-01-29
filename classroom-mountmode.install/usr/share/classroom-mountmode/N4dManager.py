@@ -1,7 +1,6 @@
-import xmlrpc.client
-import ssl
 import threading
 import time
+import n4d.client
 
 
 class N4dManager:
@@ -17,9 +16,10 @@ class N4dManager:
 		self.litemode_status=False
 		self.movingprofiles_status=True
 		
+		'''
 		if server!=None:
 			self.set_server(server)
-		
+		'''
 	#def init
 	
 	
@@ -30,24 +30,36 @@ class N4dManager:
 			
 	#def dprint
 		
-	
+	'''
 	def set_server(self,server):
 		
 		context=ssl._create_unverified_context()	
 		self.client=xmlrpc.client.ServerProxy("https://%s:9779"%server,allow_none=True,context=context)
-		
+	'''	
 	#def set_server
 	
 	
-	def validate_user(self,user,password):
+	def validate_user(self,server,user,password):
 		
-		ret=self.client.validate_user(user,password)
-		self.user_validated,self.user_groups=ret
+		try:
+			self.client=n4d.client.Client("https://%s:9779"%server,user,password)
 			
+			ret=self.client.validate_user()
+			self.user_validated=ret[0]
+			self.user_groups=ret[1]
+				
+			
+			if self.user_validated:
+				t=self.client.get_ticket()
+				if t.valid():
+					self.client=n4d.client.Client(ticket=t)
+					self.get_server_info()
+				else:
+					self.user_validated=False
 		
-		if self.user_validated:
-			self.validation=(user,password)
-			self.get_server_info()
+		except Exception as e:
+			self.dprint("Classroom mount mode info. Validation Error: %s"%str(e))
+			self.user_validated=False
 					
 		return self.user_validated
 		
@@ -66,10 +78,9 @@ class N4dManager:
 	def is_litemode_enabled(self):
 		
 		try:
-			ret=self.client.is_lite_enabled(self.validation,"ClassroomMountModeManager")
-			if ret["status"]:
-				return ret["msg"]
-				
+			#Old n4d:ret=self.client.is_lite_enabled(self.validation,"ClassroomMountModeManager")
+			return self.client.ClassroomMountModeManager.is_lite_enabled()
+
 		except Exception as e:
 			print(str(e))
 			
@@ -80,10 +91,9 @@ class N4dManager:
 	def is_movingprofiles_enabled(self):
 		
 		try:
-			ret=self.client.is_moving_profiles_enabled(self.validation,"ClassroomMountModeManager")
-			if ret["status"]:
-				return ret["msg"]
-				
+			#Old n4d: ret=self.client.is_moving_profiles_enabled(self.validation,"ClassroomMountModeManager")
+			return self.client.ClassroomMountModeManager.is_moving_profiles_enabled()
+
 		except Exception as e:
 			print(str(e))
 			
@@ -102,7 +112,8 @@ class N4dManager:
 		
 		self.dprint("Classroom mount mode save changes")
 		self.dprint("-Lite mode enabled: "+str(status))
-		ret=self.client.set_lite_mode(self.validation,"ClassroomMountModeManager",status)
+		#Old n4d:ret=self.client.set_lite_mode(self.validation,"ClassroomMountModeManager",status)
+		ret=self.client.ClassroomMountModeManager.set_lite_mode(status)
 		self.dprint("-N4d response lite mode saved: " +str(ret))
 		
 	#def set_litemode_status
@@ -111,7 +122,8 @@ class N4dManager:
 	def set_movingprofiles_status(self,status):
 		
 		self.dprint("-Moving profiles enabled: "+str(status))
-		ret=self.client.set_moving_mode(self.validation,"ClassroomMountModeManager",status)
+		#Old n4d: ret=self.client.set_moving_mode(self.validation,"ClassroomMountModeManager",status)
+		ret=self.client.ClassroomMountModeManager.set_moving_mode(status)
 		self.dprint("-N4d response moving profiles saved: " +str(ret))
 	
 	#def set_movingprofile_status
