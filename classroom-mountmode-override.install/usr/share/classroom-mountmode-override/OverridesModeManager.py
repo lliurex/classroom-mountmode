@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*
 import gi
 gi.require_version('Gtk', '3.0')
@@ -8,9 +8,7 @@ import signal
 import gettext
 import sys
 import re
-import ssl
-import xmlrpc.client
-
+import n4d.client
 
 signal.signal(signal.SIGINT, signal.SIG_DFL)
 _ = gettext.gettext
@@ -58,14 +56,14 @@ class OverridesModeManager:
 				
 	#def validate_user
 	
-	
+	'''
 	def read_n4dkey(self):
 
 		f=open("/etc/n4d/key")
 		key=f.readline().strip("\n")
 		f.close()
 		return key
-
+	'''
 	#def read_n4dkey
 
 
@@ -107,11 +105,18 @@ class OverridesModeManager:
 	def get_server_config(self):
 
 		server_config={}
+		'''
 		context=ssl._create_unverified_context()	
 		client=xmlrpc.client.ServerProxy("https://localhost:9779",allow_none=True,context=context)
 		u=self.read_n4dkey()
 		server_config["SRV_LITE_MODE"]=str(client.get_variable(u,"VariablesManager","SRV_LITE_MODE"))
 		server_config["SRV_MOVING_MODE"]=str(client.get_variable(u,"VariablesManager","SRV_MOVING_MODE"))
+		'''
+		master_key=n4d.client.Key.master_key()
+		if master_key.valid():
+			n4dclient=n4d.client.Client(key=master_key)
+			server_config["SRV_LITE_MODE"]=str(n4dclient.get_variable("SRV_LITE_MODE"))
+			server_config["SRV_MOVING_MODE"]=str(n4dclient.get_variable("SRV_MOVING_MODE"))
 
 		return server_config
 
