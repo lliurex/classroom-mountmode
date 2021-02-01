@@ -1,3 +1,11 @@
+classroom-mountmode (0.27) focal; urgency=medium
+
+  * Migrated n4d-plugin to python3 and new n4d
+  * Integrated gui with new n4d client
+  * Initial relase for focal
+
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Mon, 01 Feb 2021 07:57:24 +0100
+
 classroom-mountmode (0.17) bionic; urgency=medium
 
   * Updated link to the wiki
