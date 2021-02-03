@@ -28,8 +28,8 @@ class ClassroomMountModeManager:
 		self.lite_status=objects["VariablesManager"].get_variable("SRV_LITE_MODE")
 		self.moving_status=objects["VariablesManager"].get_variable("SRV_MOVING_MODE")
 		'''
-		self.lite_status=self.core.get_variable("SRV_LITE_MODE")["return"]
-		self.moving_status=self.core.get_variable("SRV_MOVING_MODE")["return"]
+		self.lite_status=self.core.get_variable("SRV_LITE_MODE").get('return',None)
+		self.moving_status=self.core.get_variable("SRV_MOVING_MODE").get('return',None)
 
 		
 		if self.lite_status==None:
