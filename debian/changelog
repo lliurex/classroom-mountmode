@@ -1,3 +1,9 @@
+classroom-mountmode (0.27.2) focal; urgency=medium
+
+  * Changes in gui style
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 12 May 2021 17:19:00 +0200
+
 classroom-mountmode (0.27.1) focal; urgency=medium
 
   * Improved code
