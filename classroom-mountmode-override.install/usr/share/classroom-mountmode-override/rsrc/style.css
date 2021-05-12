@@ -25,25 +25,25 @@
 #DEFAULT-LABEL-HELP
 {
 	font: 11pt Quattrocento Sans;
-	color: #888888;
+	color: #000000;
 	
 }
 
 #DEFAULT-LABEL:disabled
 {
-	color: #bbbbbb;
+	color: #000000;
 }
 
 #INFO-LABEL
 {
 	font: 11pt Quattrocento Sans Bold;
-	color: #888888;
+	color: #000000;
 	
 }
 
 #INFO-LABEL:disabled
 {
-	color: #bbbbbb;
+	color: #000000;
 }
 
 
@@ -214,4 +214,29 @@ GtkToolbar
 	background-color: #bbbbbb;
 	border-bottom: 1px solid transparent;
 	color: #999999;
+}
+
+#FEEDBACK_LABEL{
+
+	color:#000000;
+	font: 11pt Roboto Bold;
+}
+
+
+#HIDE_BOX{
+
+	border-style:none;
+	border-width: 0px;
+	border-radius: 0px;
+	border-color:transparent;
+	background:transparent;
+}
+
+#SUCCESS_BOX{
+
+	border-style:solid;
+	border-width: 1px;
+	border-radius: 0px;
+	border-color:#27ae60;
+	background:#c7e3d4;
 }

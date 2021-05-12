@@ -68,8 +68,9 @@ class ClassroomMountMode:
 		self.user_entry=builder.get_object("user_entry")
 		self.password_entry=builder.get_object("password_entry")
 		self.server_ip_entry=builder.get_object("server_ip_entry")
+		self.login_msg_box=builder.get_object("login_msg_box")
+		self.login_error_img=builder.get_object("login_error_img")
 		self.login_msg_label=builder.get_object("login_msg_label")
-		
 		self.servermode_label=builder.get_object("servermode_label")
 		self.servermode_separator=builder.get_object("servermode_separator")
 		self.mode_label=builder.get_object("mode_label")
@@ -88,6 +89,8 @@ class ClassroomMountMode:
 		self.lite_separator=builder.get_object("lite_separator")
 		self.info_label=builder.get_object("info_label")
 
+		self.feedback_msg_box=builder.get_object("feedback_label_box")
+		self.feedback_ok_img=builder.get_object("feedback_ok_img")
 		self.msg_label=builder.get_object("msg_label")
 
 		self.help_btn=builder.get_object("help_btn")
@@ -100,6 +103,8 @@ class ClassroomMountMode:
 		self.set_css_info()
 		self.main_window.show()
 		self.orig_values=[]
+		self.login_error_img.hide()
+		self.manage_feedback_box(True)
 		
 	#def start_gui
 	
@@ -141,7 +146,7 @@ class ClassroomMountMode:
 		f=Gio.File.new_for_path(CSS_FILE)
 		self.style_provider.load_from_file(f)
 		Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(),self.style_provider,Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
-		self.main_window.set_name("WHITE-BACKGROUND")
+		#self.main_window.set_name("WHITE-BACKGROUND")
 		self.user_entry.set_name("CUSTOM-ENTRY")
 		self.password_entry.set_name("CUSTOM-ENTRY")
 		self.server_ip_entry.set_name("CUSTOM-ENTRY")
@@ -158,7 +163,7 @@ class ClassroomMountMode:
 
 		self.lite_separator.set_name("HEADER-SEPARATOR")
 		self.info_label.set_name("DEFAULT-LABEL-HELP")
-		self.msg_label.set_name("MSG-LABEL")
+		#self.msg_label.set_name("MSG-LABEL")
 
 	#def set_css_info		
 	
@@ -172,6 +177,10 @@ class ClassroomMountMode:
 	
 	
 	def login_clicked(self,widget):
+
+		self.login_msg_box.set_name("HIDE_BOX")
+		self.login_error_img.hide()
+		self.login_msg_label.set_halign(Gtk.Align.CENTER)
 		
 		user=self.user_entry.get_text()
 		password=self.password_entry.get_text()
@@ -198,7 +207,7 @@ class ClassroomMountMode:
 
 	def mode_btn_clicked(self,widget):
 
-		self.msg_label.set_text("")
+		self.manage_feedback_box(True)
 		self.modes_popover.show()
 		
 	#def mode_btn_clicked	
@@ -206,7 +215,7 @@ class ClassroomMountMode:
 	def set_litemode(self,widget):
 
 		self.modes_popover.hide()
-		self.msg_label.set_text("")
+		self.manage_feedback_box(True)
 		self.mode_entry_label.set_text(_("Lite"))
 		self.litemode_state=True
 		self.movingprofiles_btn.set_sensitive(True)
@@ -217,7 +226,7 @@ class ClassroomMountMode:
 	def set_fullmode(self,widget):
 
 		self.modes_popover.hide()
-		self.msg_label.set_text("")
+		self.manage_feedback_box(True)
 		self.mode_entry_label.set_text(_("Full"))
 		self.litemode_state=False
 		self.movingprofiles_btn.set_sensitive(False)
@@ -228,7 +237,7 @@ class ClassroomMountMode:
 
 	def movingprofiles_status_changed(self,widget):
 
-		self.msg_label.set_text("")
+		self.manage_feedback_box(True)
 		if self.movingprofiles_state:
 			self.movingprofiles_status_orig=False
 			self.movingprofiles_manage_state(False)
@@ -241,9 +250,10 @@ class ClassroomMountMode:
 	def apply_changes(self,widget):
 		
 		self.orig_values=[copy.deepcopy(self.litemode_state),copy.deepcopy(self.movingprofiles_state)]
-		self.msg_label.set_text("")
+		self.manage_feedback_box(True)
 		self.n4d_man.save_mountmode_config(self.litemode_state,self.movingprofiles_state)
-		self.msg_label.set_markup("<b>"+_("Changes applied successful")+"</b>")
+		self.manage_feedback_box(False)
+		self.msg_label.set_text(_("Changes applied successful"))
 		
 	#def apply_changes
 
@@ -326,13 +336,14 @@ class ClassroomMountMode:
 	
 	
 	def validate_user_listener(self,thread):
-			
+		
+		error=False	
 		if thread.is_alive():
 			return True
 				
 		self.login_button.set_sensitive(True)
 		if not self.n4d_man.user_validated:
-			self.login_msg_label.set_markup("<span foreground='red'>"+_("Invalid user")+"</span>")
+			error=True
 		else:
 			group_found=False
 			for g in ["adm","admins","teachers"]:
@@ -348,8 +359,14 @@ class ClassroomMountMode:
 				self.stack.set_visible_child_name("servermode")
 				
 			else:
-				self.login_msg_label.set_markup("<span foreground='red'>"+_("Invalid user")+"</span>")
+				error=True
 				
+		if error:
+			self.login_msg_box.set_name("ERROR_BOX")
+			self.login_error_img.show()
+			self.login_msg_label.set_name("FEEDBACK_LABEL")
+			self.login_msg_label.set_text(_("Invalid user"))
+			self.login_msg_label.set_halign(Gtk.Align.START)
 		return False
 			
 	#def validate_user_listener
@@ -380,8 +397,21 @@ class ClassroomMountMode:
 		sys.exit(0)
 
 	#def check_changes
+
+	def manage_feedback_box(self,hide):
+
+		if hide:
+			self.feedback_msg_box.set_name("HIDE_BOX")
+			self.feedback_ok_img.hide()
+			self.msg_label.set_text("")
+		else:
+			self.feedback_msg_box.set_name("SUCCESS_BOX")
+			self.feedback_ok_img.show()
+			self.msg_label.set_name("FEEDBACK_LABEL")
+
+	#def manage_feedback_box
 		
-#class LliurexShutdowner
+#class ClassroomMountMode
 
 
 if __name__=="__main__":
