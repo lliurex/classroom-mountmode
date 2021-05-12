@@ -85,7 +85,9 @@ class ClassroomMountModeOverride:
 		config_separator=builder.get_object("config_separator")
 		
 		self.info_label=builder.get_object("info_label")
-
+		
+		self.feedback_msg_box=builder.get_object("feedback_label_box")
+		self.feedback_ok_img=builder.get_object("feedback_ok_img")
 		self.msg_label=builder.get_object("msg_label")
 
 		self.help_btn=builder.get_object("help_btn")
@@ -103,6 +105,7 @@ class ClassroomMountModeOverride:
 		self.apply=False
 		self.connect_signals()
 		self.main_window.show()
+		self.manage_feedback_box(True)
 		
 				
 	#def start_gui
@@ -141,7 +144,7 @@ class ClassroomMountModeOverride:
 		f=Gio.File.new_for_path(CSS_FILE)
 		self.style_provider.load_from_file(f)
 		Gtk.StyleContext.add_provider_for_screen(Gdk.Screen.get_default(),self.style_provider,Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)
-		self.main_window.set_name("WHITE-BACKGROUND")
+		#self.main_window.set_name("WHITE-BACKGROUND")
 
 		for item in self.header_list:
 			item.set_name("HEADER-LABEL")
@@ -156,7 +159,7 @@ class ClassroomMountModeOverride:
 		self.fullmode_btn.set_name("POPOVER_BUTTON")
 		self.litemode_btn.set_name("POPOVER_BUTTON")
 		self.info_label.set_name("DEFAULT-LABEL-HELP")
-		self.msg_label.set_name("MSG-LABEL")
+		#self.msg_label.set_name("MSG-LABEL")
 
 	#def set_css_info		
 	
@@ -164,6 +167,7 @@ class ClassroomMountModeOverride:
 	
 	def overrides_mode_btn_clicked(self,widget):
 
+		self.manage_feedback_box(True)
 		self.msg_label.set_text("")
 		self.overrides_modes_popover.show()
 
@@ -194,6 +198,7 @@ class ClassroomMountModeOverride:
 
 	def overrides_movingprofiles_btn_clicked(self,widget):
 
+		self.manage_feedback_box(True)
 		self.msg_label.set_text("")
 		if self.overrides_movingprofiles_set=="True":
 			self.movingprofiles_enabled_orig="False"
@@ -282,8 +287,8 @@ class ClassroomMountModeOverride:
 		info=[self.overrides_server_config,self.overrides_mode_set,self.overrides_movingprofiles_set]
 		self.orig_values=copy.deepcopy(info)
 		self.overrides_man.save_overrides_mountmode(info)
-		self.msg_label.set_markup("<b>"+_("Changes applied successful")+"</b>")
-		
+		self.msg_label.set_text(_("Changes applied successful"))
+		self.manage_feedback_box(False)		
 	#def apply_changes
 
 	def overrides_option_switch_managed(self):
@@ -296,6 +301,8 @@ class ClassroomMountModeOverride:
 	#def overrides_option_switch_managed
 	
 	def overrides_option_switch_changed(self,widget,data):
+
+		self.manage_feedback_box(True)		
 		
 		self.overrides_server_config=widget.get_active()
 
@@ -388,7 +395,19 @@ class ClassroomMountModeOverride:
 		sys.exit(0)
 
 	#def check_changes	
-		
+	def manage_feedback_box(self,hide):
+
+		if hide:
+			self.feedback_msg_box.set_name("HIDE_BOX")
+			self.feedback_ok_img.hide()
+			self.msg_label.set_text("")
+		else:
+			self.feedback_msg_box.set_name("SUCCESS_BOX")
+			self.feedback_ok_img.show()
+			self.msg_label.set_name("FEEDBACK_LABEL")
+
+	#def manage_feedback_box
+	
 #class OverridesClassroomMountMode
 
 
