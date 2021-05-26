@@ -1,3 +1,9 @@
+classroom-mountmode (0.27.3) focal; urgency=medium
+
+  * Fixed zero app files
+  
+ -- Juan Ramon Pelegrina <juapesai@hotmail.com>  Wed, 26 May 2021 16:38:16 +0200
+
 classroom-mountmode (0.27.2) focal; urgency=medium
 
   * Changes in gui style
